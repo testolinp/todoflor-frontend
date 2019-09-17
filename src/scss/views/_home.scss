@@ -1,0 +1,98 @@
+.home {
+  &__herospace {
+    width: 100%;
+    height: 180px;
+    background: url('/images/herospace.png') center no-repeat;
+    background-size: cover;
+
+    @include breakpoint('large') {
+      height: 480px;
+      background-image: url('/images/herospace-large.png');
+    }
+  }
+
+  &__about {
+    position: relative;
+    background: var(--light-green);
+    padding: 0 20px;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      content: '';
+      width: 100%;
+      height: 105px;
+      background: #fff;
+    }
+
+    &__image {
+      position: relative;
+      width: 100%;
+      height: 220px;
+      background: grey;
+    }
+
+    &__data {
+      padding: 40px 0;
+
+      &__title {
+        font-family: SangBleu;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+
+      &__description {
+        padding: 10px 0 0;
+        font-family: SangBleu;
+        font-size: 13px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  &__buy {
+    padding: 40px 20px;
+
+    &__title {
+      text-align: center;
+      font-family: SangBleu;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    &__list {
+      padding: 0 40px;
+
+      &__item {
+        padding: 30px 0 0;
+
+        &__image {
+          width: 75px;
+          height: 75px;
+          border-radius: 100%;
+          margin: 0 auto;
+        }
+
+        &__description {
+          font-family: SangBleu;
+          font-size: 13px;
+          line-height: 18px;
+          text-align: center;
+          padding: 20px 0 0;
+        }
+      }
+    }
+  }
+
+  &__newsletter {
+    width: 100%;
+    height: 150px;
+    background: var(--green);
+
+    @include breakpoint('large') {
+      height: 120px;
+    }
+  }
+}

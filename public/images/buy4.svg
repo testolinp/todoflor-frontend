@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="146px" height="146px" viewBox="0 0 146 146" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Group 15</title>
+    <desc>Created with Sketch.</desc>
+    <g id="TodoFlor" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="HOME" transform="translate(-1139.000000, -2079.000000)" stroke="#1C8D61" stroke-width="2">
+            <g id="faqs" transform="translate(105.000000, 1971.000000)">
+                <g id="Group-15" transform="translate(1035.000000, 109.000000)">
+                    <path d="M144,72 C144,111.764266 111.764266,144 72,144 C32.2357345,144 0,111.764266 0,72 C0,32.2357345 32.2357345,0 72,0 C111.764266,0 144,32.2357345 144,72 Z" id="Stroke-1"></path>
+                    <polyline id="Stroke-3" points="74 99 107.798638 87 117 90.0580855"></polyline>
+                    <polyline id="Stroke-5" points="59 88 40.3982372 38 28 38"></polyline>
+                    <path d="M74,99.5 C74,106.404466 68.4029851,112 61.5,112 C54.5970149,112 49,106.404466 49,99.5 C49,92.5984956 54.5970149,87 61.5,87 C68.4029851,87 74,92.5984956 74,99.5 Z" id="Stroke-7"></path>
+                    <path d="M61.5,99.5 L61.5,99.5" id="Stroke-9"></path>
+                    <polygon id="Stroke-11" points="114 73.1628654 70.6565669 89 56 47.8363988 99.3434331 32"></polygon>
+                    <polyline id="Stroke-13" points="85.7790898 38 93 57.6865499 78.5581797 63 71 42.813233"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

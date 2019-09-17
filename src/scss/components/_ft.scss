@@ -1,0 +1,52 @@
+.ft {
+  padding: 40px 20px;
+  background: var(--light-green);
+
+  &__top {
+    &__map {
+      width: 100%;
+      height: 290px;
+      background: grey;
+    }
+
+    &__data {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--green);
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 20px;
+
+      &__dir {
+        font-family: SangBleu;
+        font-size: 12px;
+        line-height: 16px;
+      }
+
+      &__time {
+        font-family: SangBleu;
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+
+  &__bottom {
+    padding: 40px 0 0;
+    text-align: center;
+
+    &__legal {
+      display: block;
+      font-family: SangBleu;
+      font-size: 12px;
+      color: var(--green);
+      padding: 0 0 15px;
+    }
+
+    &__terms {
+      display: inline-block;
+      font-family: SangBleu;
+      font-size: 12px;
+      color: var(--green);
+    }
+  }
+}

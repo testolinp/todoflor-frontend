@@ -1,0 +1,234 @@
+.register {
+  position: relative;
+  padding: 60px 20px;
+
+  @include breakpoint('large') {
+    padding: 120px 20px;
+  }
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 180px;
+    background: url('/images/herospace.png') center no-repeat;
+    background-size: cover;
+
+    @include breakpoint('large') {
+      height: 480px;
+      background-image: url('/images/herospace-large.png');
+    }
+  }
+
+  &__content {
+    position: relative;
+    padding: 60px 20px;
+    background: var(--white);
+    border: 1px solid var(--green);
+
+    &__top {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+
+      &:before {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        background: var(--green);
+      }
+
+      &:after {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        background: var(--green);
+      }
+    }
+
+    &__bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+
+      &:before {
+        position: absolute;
+        top: -14px;
+        left: 10px;
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        background: var(--green);
+      }
+
+      &:after {
+        position: absolute;
+        top: -14px;
+        right: 10px;
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        border-radius: 100%;
+        background: var(--green);
+      }
+    }
+
+    @include breakpoint('large') {
+      max-width: 710px;
+      margin: 0 auto;
+    }
+
+    &__title {
+      font-family: 'SangBleu';
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase;
+
+      @include breakpoint('large') {
+        font-size: 30px;
+      }
+    }
+
+    &__description {
+      padding: 10px 40px 0;
+      font-family: 'SangBleu';
+      font-size: 14px;
+      line-height: 1.2;
+      text-align: center;
+
+      @include breakpoint('large') {
+        padding: 20px 40px 0;
+        font-size: 19px;
+        line-height: 1.5;
+      }
+
+      span {
+        display: block;
+      }
+    }
+
+    &__form {
+      padding: 40px 0 0;
+
+      @include breakpoint('large') {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+
+      &__col {
+        @include breakpoint('large') {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-column-gap: 25px;
+        }
+      }
+
+      &__sep {
+        padding: 0 0 20px;
+
+        input[type="text"] {
+          width: 100%;
+          height: 40px;
+          padding: 0;
+          border: 0 none;
+          border-bottom: 1px solid #000;
+          font-family: 'SangBleu';
+          font-size: 14px;
+          line-height: 40px;
+
+          @include breakpoint('large') {
+            font-size: 16px;
+          }
+
+          &:focus {
+            outline: 0 none;
+          }
+        }
+      }
+
+      &__button {
+        padding: 40px 40px 0;
+
+        @include breakpoint('large') {
+          padding: 40px 0 0;
+        }
+        
+        button {
+          width: 100%;
+          height: 40px;
+          background: var(--light-green);
+          border-radius: 20px;
+          font-family: 'SangBleu';
+          font-size: 12px;
+          line-height: 40px;
+          text-transform: uppercase;
+
+          @include breakpoint('large') {
+            font-size: 16px;
+            width: 250px;
+            margin: 0 auto;
+            display: block;
+          }
+
+          &:focus {
+            outline: 0 none;
+          }
+        }
+      }
+
+      &__important {
+        padding: 20px 0;
+        text-align: center;
+
+        &__title {
+          font-family: 'SangBleu';
+          font-size: 17px;
+          font-weight: 700;
+          text-transform: uppercase;
+          line-height: 1.5;
+        }
+
+        &__description {
+          font-family: 'SangBleu';
+          font-size: 17px;
+        }
+      }
+    }
+
+    &__register {
+      padding: 25px 0 0;
+
+      &__text {
+        font-family: 'SangBleu';
+        font-size: 14px;
+        text-align: center;
+
+        @include breakpoint('large') {
+          font-size: 17px;
+        }
+
+        a {
+          color: var(--green);
+        }
+      }
+    }
+  }
+}

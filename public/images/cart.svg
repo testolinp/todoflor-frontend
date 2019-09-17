@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="22px" viewBox="0 0 24 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 57.1 (83088) - https://sketch.com -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <g id="TodoFlor" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="HOME" transform="translate(-1333.000000, -20.000000)" stroke="#202020">
+            <g id="header" transform="translate(40.000000, 16.000000)">
+                <g id="Group-7" transform="translate(1293.000000, 5.000000)">
+                    <polyline id="Stroke-1" stroke-linecap="round" stroke-linejoin="round" points="0 0 3.83333333 0 7.66666667 15 19.9333333 15 23 6 5.36973333 6"></polyline>
+                    <path d="M7,18.5 C7,19.328 7.6715,20 8.5,20 C9.3285,20 10,19.328 10,18.5 C10,17.672 9.3285,17 8.5,17 C7.6715,17 7,17.672 7,18.5 Z" id="Stroke-3"></path>
+                    <path d="M18,18.5 C18,19.328 18.6715,20 19.5,20 C20.3285,20 21,19.328 21,18.5 C21,17.672 20.3285,17 19.5,17 C18.6715,17 18,17.672 18,18.5 Z" id="Stroke-5"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
