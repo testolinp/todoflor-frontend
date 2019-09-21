@@ -7,7 +7,165 @@
 
     @include breakpoint('large') {
       height: 480px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background-image: url('/images/herospace-large.png');
+    }
+
+    &__icon {
+      display: none;
+      width: 210px;
+      height: 210px;
+      background: url('/images/hero-icon.png') center no-repeat;
+      background-size: contain;
+
+      @include breakpoint('large') {
+        display: block;
+      }
+    }
+  }
+
+  &__products {
+    padding: 40px 0 60px;
+
+    @include breakpoint('large') {
+      padding: 90px 20px;
+    }
+
+    &__title {
+      text-align: center;
+      font-family: SangBleu;
+      font-size: 16px;
+      text-transform: uppercase;
+
+      @include breakpoint('large') {
+        font-size: 28px;
+      }
+    }
+
+    &__list {
+      position: relative;
+      padding: 30px 0 0;
+
+      @include breakpoint('large') {
+        padding: 30px 70px 0;
+      }
+
+      &__items {
+        padding: 0 10px;
+
+        &:focus {
+          outline: 0 none;
+        }
+
+        &__box {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background: var(--green);
+          height: 260px;
+
+          &__title {
+            font-family: SangBleu;
+            font-size: 14px;
+            color: var(--white);
+            text-transform: uppercase;
+
+            @include breakpoint('large') {
+              font-size: 26px;
+            }
+          }
+        }
+      }
+
+      .slick-dots {
+        padding: 30px 0 0;
+        display: flex!important;
+        justify-content: center;
+
+        @include breakpoint('large') {
+          padding: 70px 0 0;
+        }
+
+        li {
+          width: 30px;
+          height: 3px;
+          background: var(--slick);
+
+          &:first-child {
+            border-top-left-radius: 2px;
+            border-bottom-left-radius: 2px;
+          }
+
+          &:last-child {
+            border-top-right-radius: 2px;
+            border-bottom-right-radius: 2px;
+          }
+
+          button {
+            text-indent: -9999px;
+            width: 30px;
+            height: 3px;
+            border-radius: 2px;
+
+            &:focus {
+              outline: 0 none;
+            }
+          }
+
+          &.slick-active {
+            button {
+              background: var(--slick-active);
+            }
+          }
+        }
+      }
+
+      .slick-arrow {
+        position: absolute;
+        top: calc(50% - 50px);
+        width: 10px;
+        height: 25px;
+        display: block;
+        text-indent: -9999px;
+
+        &.slick-prev {
+          left: -40px;
+          background: url('/images/arrow-l.png') center no-repeat;
+          background-size: contain;
+        }
+
+        &.slick-next {
+          right: -40px;
+          background: url('/images/arrow-r.png') center no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+
+    &__btn {
+      padding: 35px 0 0;
+      text-align: center;
+
+      @include breakpoint('large') {
+        padding: 50px 0 0;
+      }
+
+      &__link {
+        display: inline-block;
+        padding: 15px 30px 12px;
+        background:var(--light-green);
+        border-radius: 20px;
+        font-family: SangBleu;
+        font-size: 12px;
+        color: var(--black);
+        text-transform: uppercase;
+
+        @include breakpoint('large') {
+          font-size: 15px;
+        }
+      }
     }
   }
 
@@ -15,6 +173,13 @@
     position: relative;
     background: var(--light-green);
     padding: 0 20px;
+
+    @include breakpoint('large') {
+      padding: 40px 40px 0;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 70px;
+    }
 
     &:before {
       position: absolute;
@@ -25,22 +190,71 @@
       width: 100%;
       height: 105px;
       background: #fff;
+
+      @include breakpoint('large') {
+        height: 40px;
+        top: inherit;
+        bottom: 0;
+      }
     }
 
     &__image {
       position: relative;
       width: 100%;
       height: 220px;
-      background: grey;
+      background: url('/images/about.jpg') center no-repeat;
+      background-size: cover;
+
+      @include breakpoint('large') {
+        height: 440px;
+      }
+
+      &:before {
+        position: absolute;
+        bottom: -30px;
+        right: 20px;
+        content: '';
+        display: block;
+        width: 60px;
+        height: 60px;
+        background: url('/images/about-title.svg') center no-repeat;
+        background-size: contain;
+
+        @include breakpoint('large') {
+          display: none;
+        }
+      }
     }
 
     &__data {
       padding: 40px 0;
 
+      @include breakpoint('large') {
+        padding: 70px 0 0;
+      }
+
       &__title {
         font-family: SangBleu;
         font-size: 16px;
         text-transform: uppercase;
+
+        @include breakpoint('large') {
+          display: inline-block;
+          position: relative;
+          font-size: 26px;
+        }
+
+        &:before {
+          position: absolute;
+          top: -35px;
+          right: -50px;
+          content: '';
+          display: block;
+          width: 70px;
+          height: 70px;
+          background: url('/images/about-title.svg') center no-repeat;
+          background-size: contain;
+        }
       }
 
       &__description {
@@ -48,6 +262,13 @@
         font-family: SangBleu;
         font-size: 13px;
         line-height: 18px;
+
+        @include breakpoint('large') {
+          padding: 35px 0 0;
+          font-size: 16px;
+          line-height: 21px;
+          max-width: 420px;
+        }
       }
     }
   }
@@ -55,15 +276,30 @@
   &__buy {
     padding: 40px 20px;
 
+    @include breakpoint('large') {
+      padding: 120px 20px;
+    }
+
     &__title {
       text-align: center;
       font-family: SangBleu;
       font-size: 16px;
       text-transform: uppercase;
+
+      @include breakpoint('large') {
+        font-size: 28px;
+      }
     }
 
     &__list {
       padding: 0 40px;
+
+      @include breakpoint('large') {
+        padding: 30px 70px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 60px;
+      }
 
       &__item {
         padding: 30px 0 0;
@@ -73,6 +309,11 @@
           height: 75px;
           border-radius: 100%;
           margin: 0 auto;
+
+          @include breakpoint('large') {
+            width: 140px;
+            height: 140px;
+          }
         }
 
         &__description {
@@ -81,6 +322,11 @@
           line-height: 18px;
           text-align: center;
           padding: 20px 0 0;
+
+          @include breakpoint('large') {
+            font-size: 14px;
+            padding: 30px 0 0;
+          }
         }
       }
     }
