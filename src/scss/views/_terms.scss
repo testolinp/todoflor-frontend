@@ -1,0 +1,36 @@
+
+
+.terms {
+  position: relative;
+
+  &__content {
+    padding: 60px 20px;
+
+    @include breakpoint('large') {
+      padding: 60px 100px;
+      max-width: 1440px;
+    }
+
+    h1 {
+      padding: 0 0 40px;
+      font-family: 'SangBleu';
+      font-size: 20px;
+      text-transform: uppercase;
+
+      @include breakpoint('large') {
+        font-size: 27px;
+      }
+    }
+
+    p {
+      font-family: 'Apercu-light';
+      font-size: 16px;
+      line-height: 20px;
+      padding: 0 0 20px;
+
+      &:last-child {
+        padding: 0;
+      }
+    }
+  }
+}

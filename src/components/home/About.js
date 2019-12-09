@@ -7,6 +7,11 @@ const About = () => {
       <div className="home__about__data">
         <h3 className="home__about__data__title">¿Quiénes somos?</h3>
         <p className="home__about__data__description">Desde 1991, Todoflor S.R.L. es una empresa dedicada a la importación de flores y plantas artificiales, floreros y artículos de Navidad. No obstante, nuestra permanencia en el rubro data de 1973 , cuando comenzamos con la fabricación de flores artificiales, en los tiempos en que las posibilidades de importación eran muy limitadas. A lo largo de estos años, hemos tratado de acompañar la evolución de la moda, en lo que se refiere a colores, texturas y materiales.</p>
+        <div className="home__about__data__social">
+          <p className="home__about__data__social__text">Seguinos en las redes</p>
+          <a href="#" className="home__about__data__social__icon"><img src="/images/inst-icon.svg" /></a>
+          <a href="#" className="home__about__data__social__icon"><img src="/images/fb-icon.svg" /></a>
+        </div>
       </div>
     </section>
   )

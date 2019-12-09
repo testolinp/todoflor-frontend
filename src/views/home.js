@@ -4,6 +4,7 @@ import Herospace from '../components/home/Herospace'
 import Products from '../components/home/Products'
 import About from '../components/home/About'
 import Buy from '../components/home/Buy'
+import Newsletter from '../components/home/Newsletter'
 
 const HomeView = () => {
   return (
@@ -13,9 +14,7 @@ const HomeView = () => {
         <Products />
         <About />
         <Buy />
-        <section className="home__newsletter">
-          {/* <p className="home__newsletter__description">suscribite a nuestro newsletter</p> */}
-        </section>
+        <Newsletter />
       </section>
     </Layout>
   )

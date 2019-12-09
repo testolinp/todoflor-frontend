@@ -1,0 +1,22 @@
+import React from 'react'
+import Layout from '../components/Layout'
+
+const TermsView = () => {
+  return (
+    <Layout>
+      <section className="terms">
+        <div className="terms__content">
+          <h1>términos y condiciones</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non felis non purus tincidunt rutrum in et massa. Nulla pellentesque nulla ac ex efficitur, nec pharetra ante faucibus. Nam porttitor dignissim tristique. Sed non arcu quis libero varius luctus. Ut aliquet aliquam nunc, quis sollicitudin magna viverra ut. Integer in nunc et felis blandit sodales non in diam. Pellentesque id tellus erat. Vestibulum sit amet nisl lorem. Duis sollicitudin metus justo. Ut vel metus magna.</p>
+          <p>Nulla vel libero orci. Nulla ut augue nec sem tincidunt dictum. Etiam a tempor eros, a dictum ipsum. In maximus volutpat libero, id maximus felis pretium nec. Quisque cursus finibus ornare. Nullam vitae varius turpis, sit amet venenatis justo. Donec eget mattis nibh, et tristique neque. Nulla id erat enim. Mauris vestibulum a eros suscipit aliquet. Mauris eget mattis neque. Morbi porta velit vitae nisl bibendum fermentum. Mauris mollis dui a porta tristique. Vivamus magna sapien, tincidunt et cursus faucibus, eleifend id ex. Nullam quis ex sapien. Etiam in molestie purus, quis hendrerit dolor. Maecenas elit massa, dignissim quis auctor nec, suscipit ac elit.</p>
+          <p>Suspendisse semper ipsum metus, nec volutpat eros faucibus auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed metus urna, facilisis vitae hendrerit eget, facilisis at sem. Suspendisse potenti. Sed ultrices, sapien vel condimentum porta, enim quam interdum elit, sit amet maximus dui mi pharetra erat. Integer vestibulum quam purus, aliquam tristique sem facilisis non. Suspendisse vitae odio a neque ullamcorper sollicitudin non consectetur magna. Pellentesque ultrices mattis est. Praesent lacus enim, porttitor vel accumsan in, egestas vel massa. Sed id fringilla mauris, sed consectetur libero. Fusce egestas magna sit amet sem interdum, sed cursus diam semper. Suspendisse sollicitudin, tellus vitae congue faucibus, nisi risus tincidunt elit, nec dignissim leo lacus a enim.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non felis non purus tincidunt rutrum in et massa. Nulla pellentesque nulla ac ex efficitur, nec pharetra ante faucibus. Nam porttitor dignissim tristique. Sed non arcu quis libero varius luctus. Ut aliquet aliquam nunc, quis sollicitudin magna viverra ut. Integer in nunc et felis blandit sodales non in diam. Pellentesque id tellus erat. Vestibulum sit amet nisl lorem. Duis sollicitudin metus justo. Ut vel metus magna.</p>
+          <p>Nulla vel libero orci. Nulla ut augue nec sem tincidunt dictum. Etiam a tempor eros, a dictum ipsum. In maximus volutpat libero, id maximus felis pretium nec. Quisque cursus finibus ornare. Nullam vitae varius turpis, sit amet venenatis justo. Donec eget mattis nibh, et tristique neque. Nulla id erat enim. Mauris vestibulum a eros suscipit aliquet. Mauris eget mattis neque. Morbi porta velit vitae nisl bibendum fermentum. Mauris mollis dui a porta tristique. Vivamus magna sapien, tincidunt et cursus faucibus, eleifend id ex. Nullam quis ex sapien. Etiam in molestie purus, quis hendrerit dolor. Maecenas elit massa, dignissim quis auctor nec, suscipit ac elit.</p>
+          <p>Suspendisse semper ipsum metus, nec volutpat eros faucibus auctor. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed metus urna, facilisis vitae hendrerit eget, facilisis at sem. Suspendisse potenti. Sed ultrices, sapien vel condimentum porta, enim quam interdum elit, sit amet maximus dui mi pharetra erat. Integer vestibulum quam purus, aliquam tristique sem facilisis non. Suspendisse vitae odio a neque ullamcorper sollicitudin non consectetur magna. Pellentesque ultrices mattis est. Praesent lacus enim, porttitor vel accumsan in, egestas vel massa. Sed id fringilla mauris, sed consectetur libero. Fusce egestas magna sit amet sem int erdum, sed cursus diam semper. Suspendisse sollicitudin, tellus vitae congue faucibus, nisi risus tincidunt elit, nec dignissim leo lacus a enim.</p>
+        </div>
+      </section>
+    </Layout>
+  )
+}
+
+export default TermsView

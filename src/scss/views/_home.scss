@@ -141,6 +141,10 @@
           background: url('/images/arrow-r.png') center no-repeat;
           background-size: contain;
         }
+
+        &:focus {
+          outline: 0 none;
+        }
       }
     }
 
@@ -192,7 +196,7 @@
       background: #fff;
 
       @include breakpoint('large') {
-        height: 40px;
+        height: 100px;
         top: inherit;
         bottom: 0;
       }
@@ -206,7 +210,7 @@
       background-size: cover;
 
       @include breakpoint('large') {
-        height: 440px;
+        height: 460px;
       }
 
       &:before {
@@ -254,12 +258,17 @@
           height: 70px;
           background: url('/images/about-title.svg') center no-repeat;
           background-size: contain;
+          display: none;
+
+          @include breakpoint('large') {
+            display: block;
+          }
         }
       }
 
       &__description {
         padding: 10px 0 0;
-        font-family: SangBleu;
+        font-family: 'Apercu-light';
         font-size: 13px;
         line-height: 18px;
 
@@ -270,6 +279,61 @@
           max-width: 420px;
         }
       }
+
+      &__social {
+        display: flex;
+        align-items: center;
+        padding: 30px 0 0;
+
+        @include breakpoint('large') {
+          position: relative;
+          padding: 80px 0 0;
+        }
+
+        &__text {
+          position: relative;
+          font-family: 'Apercu-light';
+          font-size: 12px;
+          text-transform: uppercase;
+          padding: 0 0 0 50px;
+
+          @include breakpoint('large') {
+            padding: 0 0 0 125px;
+            font-size: 16px;
+          }
+
+          &:before {
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            display: block;
+            content: '';
+            width: 40px;
+            height: 1px;
+            background: var(--black);
+
+            @include breakpoint('large') {
+              width: 110px;
+            }
+          }
+        }
+
+        &__icon {
+          padding: 0 0 0 15px;
+
+          @include breakpoint('large') {
+            padding: 0 0 0 25px;
+          }
+
+          img {
+            height: 20px;
+
+            @include breakpoint('large') {
+              height: 28px;
+            }
+          }
+        }
+      }
     }
   }
 
@@ -278,6 +342,11 @@
 
     @include breakpoint('large') {
       padding: 120px 20px;
+    }
+
+    @include breakpoint('extra-large') {
+      max-width: 1440px;
+      margin: 0 auto;
     }
 
     &__title {
@@ -336,9 +405,77 @@
     width: 100%;
     height: 150px;
     background: var(--green);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     @include breakpoint('large') {
       height: 120px;
+      flex-direction: row;
+    }
+
+    &__description {
+      padding: 0 0 15px;
+      font-family: 'SangBleu';
+      font-size: 12px;
+      color: var(--white);
+      text-transform: uppercase;
+
+      @include breakpoint('large') {
+        padding: 0 30px 0 0;
+        font-size: 15px;
+      }
+    }
+
+    &__input {
+      position: relative;
+      width: calc(100% - 80px);
+      height: 40px;
+      background: var(--white);
+      border-radius: 20px;
+      overflow: hidden;
+      padding: 0 10px;
+
+      @include breakpoint('large') {
+        width: 400px;
+      }
+      
+      &__text[type="text"] {
+        font-family: 'Apercu-light';
+        font-size: 15px;
+        display: block;
+        height: 40px;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        border: 0 none;
+
+        @include breakpoint('large') {
+          font-size: 17px;
+        }
+        
+        &:focus {
+          outline: 0 none;
+        }
+      }
+
+      &__btn {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        display: block;
+        border-radius: 100%;
+        border: 1px solid var(--green);
+        width: 30px;
+        height: 30px;
+        
+        img {
+          position: absolute;
+          top: 8px;
+          left: 8px;
+        }
+      }
     }
   }
 }
