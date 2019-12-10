@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const Hd = () => (
   <header className="hd">
     <div className="hd__list">
-      <a href="#" className="hd__list__item">Productos</a>
+      <Link to="/products" className="hd__list__item">Productos</Link>
       <a href="#" className="hd__list__item">Quienes somos</a>
       <a href="#" className="hd__list__item">Preguntas frecuentes</a>
     </div>
