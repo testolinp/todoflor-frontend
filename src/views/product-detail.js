@@ -1,60 +1,26 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import ProductBox from '../components/product-box'
 
 const ProductDetailView = () => {
   return (
     <Layout>
-      <section className="product">
-        <section className="product__herospace">
-          <h2 className="product__herospace__title">Flores</h2>
-        </section>
-        <div className="product__content">
-          <section className="product__aside">
-            <h2 className="product__aside__title">Flores</h2>
-            <a href="#" className="product__aside__group">Ramos</a>
-            <a href="#" className="product__aside__link">Linea económica</a>
-            <a href="#" className="product__aside__link">Linea premium</a>
-            <a href="#" className="product__aside__group">Varas</a>
-            <a href="#" className="product__aside__link">Linea económica</a>
-            <a href="#" className="product__aside__link">Linea premium</a>
-            <h2 className="product__aside__title">Follaje</h2>
-            <a href="#" className="product__aside__group">Plantas</a>
-            <a href="#" className="product__aside__group">Plantas con maceta</a>
-            <a href="#" className="product__aside__group">Matas &amp; jardín vertical</a>
-            <a href="#" className="product__aside__group">Complementos</a>
-            <h2 className="product__aside__title">Frutas</h2>
-            <h2 className="product__aside__title">Navidad</h2>
-            <a href="#" className="product__aside__group">Pinos</a>
-            <a href="#" className="product__aside__group">Decoración</a>
-            <a href="#" className="product__aside__group">Flores &amp; follaje</a>
-            <a href="#" className="product__aside__group">Adornos para pino</a>
-            <h2 className="product__aside__title">Recipientes</h2>
-            <a href="#" className="product__aside__group">Floreros</a>
-            <a href="#" className="product__aside__group">Macetas</a>
-            <h2 className="product__aside__title">Sale</h2>
-          </section>
-          <section className="product__grid">
-            <ProductBox />
-            <ProductBox />
-            <ProductBox />
-            <ProductBox />
-            <ProductBox />
-            <ProductBox />
-            <ProductBox />
-            <ProductBox />
-            <ProductBox />
-          </section>
-          <div className="product__paginator">
-            <div className="product__paginator__content">
-              <a href="#" className="product__paginator__arrow"><img src="/images/paginator-l.svg" /></a>
-              <a href="#" className="product__paginator__number">1</a>
-              <a href="#" className="product__paginator__number">2</a>
-              <a href="#" className="product__paginator__number">3</a>
-              <a href="#" className="product__paginator__number">4</a>
-              <a href="#" className="product__paginator__arrow"><img src="/images/paginator-r.svg" /></a>
-            </div>
+      <section className="product-detail">
+        <div className="product-detail__path">productos > flores > varas > <span>linea premium</span></div>
+        <div className="product-detail__image">
+          <div className="product-detail__image__wrapper"></div>
+        </div>
+        <div className="product-detail__data">
+          <span className="product-detail__data__code">TF-06234</span>
+          <h3 className="product-detail__data__title">RAMO DE GYPSOPHILIA <span>x3</span></h3>
+          <p className="product-detail__data__prize">$25</p>
+          <div className="product-detail__data__btn">
+            <a href="" className="product-detail__data__btn__link">Agregar al carrito</a>
           </div>
+        </div>
+        <div className="product-detail__extra">
+          <p className="product-detail__extra__description">Packaging: <span>30x25</span></p>
+          <p className="product-detail__extra__description">Medidas: <span>30cm x 25cm</span></p>
+          <p className="product-detail__extra__description">Cantidad minima: <span>3 unidades</span></p>
         </div>
       </section>
     </Layout>

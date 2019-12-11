@@ -6,6 +6,7 @@ import LoginView from './views/login'
 import RegisterView from './views/register'
 import TermsView from './views/terms'
 import ProductView from './views/product'
+import ProductCategoryView from './views/product-category'
 import ProductDetailView from './views/product-detail'
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
       <Route path="/register" component={RegisterView} />
       <Route path="/terms" component={TermsView} />
       <Route path="/products" component={ProductView} />
+      <Route path="/products/category" component={ProductCategoryView} />
       <Route path="/product" component={ProductDetailView} />
     </Router>
   );

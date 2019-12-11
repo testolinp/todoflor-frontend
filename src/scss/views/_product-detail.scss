@@ -1,0 +1,156 @@
+.product-detail {
+  padding: 30px 20px;
+
+  @include breakpoint('large') {
+    display: grid;
+    grid-template-areas: "path path path" "image data extra";
+    grid-template-columns: 40% 40% 20%;
+    padding: 60px 20px;
+  }
+
+  &__path {
+    padding: 0 0 30px;
+    font-family: 'Apercu-light';
+    font-size: 16px;
+    color: var(--black);
+    text-transform: uppercase;
+    grid-area: path;
+
+    @include breakpoint('large') {
+      padding: 0 110px 30px;
+    }
+
+    span {
+      color: var(--green);
+    }
+  }
+
+  &__image {
+    padding: 0 30px 30px;
+    grid-area: image;
+
+    @include breakpoint('large') {
+      padding: 0 0 0 110px;
+    }
+
+    &__wrapper {
+      height: 260px;
+      background: grey;
+
+      @include breakpoint('large') {
+        height: 400px;
+      }
+    }
+  }
+
+  &__data {
+    padding: 0 0 40px;
+    display: grid;
+    grid-template-areas: "code code" "title prize" "btn btn";
+    grid-template-columns: 80% 20%;
+    grid-area: data;
+
+    @include breakpoint('large') {
+      padding: 0 0 0 45px;
+      grid-template-rows: 50px auto auto;
+    }
+
+    &__code {
+      font-family: 'Apercu-light';
+      font-size: 16px;
+      color: var(--green);
+      grid-area: code;
+      padding: 0 0 10px;
+
+      @include breakpoint('large') {
+        padding: 0;
+      }
+    }
+
+    &__title {
+      font-family: 'SangBleu';
+      font-size: 20px;
+      color: var(--black);
+      grid-area: title;
+
+      @include breakpoint('large') {
+        font-size: 27px;
+        line-height: 38px;
+      }
+
+      span {
+        display: block;
+      }
+    }
+
+    &__prize {
+      font-family: 'SangBleu';
+      font-size: 20px;
+      color: var(--green);
+      grid-area: prize;
+      text-align: right;
+
+      @include breakpoint('large') {
+        padding-right: 130px;
+        font-size: 27px;
+      }
+    }
+
+    &__btn {
+      display: flex;
+      justify-content: center;
+      grid-area: btn;
+      padding: 40px 0 0;
+
+      @include breakpoint('large') {
+        justify-content: flex-start;
+      }
+
+      &__link {
+        font-family: 'Apercu-light';
+        font-size: 14px;
+        color: var(--black);
+        background: var(--light-green);
+        text-transform: uppercase;
+        padding: 12px 60px;
+        border-radius: 30px;
+  
+        @include breakpoint('large') {
+          font-size: 16px;
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  &__extra {
+    padding: 20px 0 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 25px;
+    border-top: 1px solid #979797;
+    grid-area: extra;
+
+    @include breakpoint('large') {
+      display: block;
+      border-top: 0 none;
+      border-left: 1px solid #979797;
+      padding: 0 0 0 30px;
+    }
+
+    &__description {
+      font-family: 'SangBleu';
+      font-size: 14px;
+      line-height: 22px;
+      color: #0007;
+
+      @include breakpoint('large') {
+        padding:  0 0 25px;
+      } 
+
+      span {
+        display: block;
+      }
+    }
+  }
+}
