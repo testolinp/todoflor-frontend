@@ -44,9 +44,9 @@ const Products = () => {
       <div className="home__products__list">
         <Slider {...settings}>
           <div className="home__products__list__items">
-            <div className="home__products__list__items__box home__products__list__items__box--1">
+            <a href="/category" className="home__products__list__items__box home__products__list__items__box--1">
               <h3 className="home__products__list__items__box__title">Novedades</h3>
-            </div>
+            </a>
           </div>
           <div className="home__products__list__items">
             <div className="home__products__list__items__box home__products__list__items__box--2">
@@ -81,7 +81,7 @@ const Products = () => {
         </Slider>
       </div>
       <div className="home__products__btn">
-        <a href="#" className="home__products__btn__link">Ver todos los productos</a>
+        <a href="/products" className="home__products__btn__link">Ver todos los productos</a>
       </div>
     </section>
   )
