@@ -44,38 +44,38 @@ const Products = () => {
       <div className="home__products__list">
         <Slider {...settings}>
           <div className="home__products__list__items">
-            <div className="home__products__list__items__box">
+            <div className="home__products__list__items__box home__products__list__items__box--1">
               <h3 className="home__products__list__items__box__title">Novedades</h3>
             </div>
           </div>
           <div className="home__products__list__items">
-            <div className="home__products__list__items__box">
+            <div className="home__products__list__items__box home__products__list__items__box--2">
               <h3 className="home__products__list__items__box__title">Flores</h3>
             </div>
           </div>
           <div className="home__products__list__items">
-            <div className="home__products__list__items__box">
+            <div className="home__products__list__items__box home__products__list__items__box--3">
               <h3 className="home__products__list__items__box__title">Follajes</h3>
             </div>
           </div>
           <div className="home__products__list__items">
-            <div className="home__products__list__items__box">
+            <div className="home__products__list__items__box home__products__list__items__box--4">
               <h3 className="home__products__list__items__box__title">Frutas</h3>
             </div>
           </div>
           <div className="home__products__list__items">
-            <div className="home__products__list__items__box">
+            <div className="home__products__list__items__box home__products__list__items__box--5">
               <h3 className="home__products__list__items__box__title">Navidad</h3>
             </div>
           </div>
           <div className="home__products__list__items">
-            <div className="home__products__list__items__box">
+            <div className="home__products__list__items__box home__products__list__items__box--6">
               <h3 className="home__products__list__items__box__title">Recipientes</h3>
             </div>
           </div>
           <div className="home__products__list__items">
-            <div className="home__products__list__items__box">
-              <h3 className="home__products__list__items__box__title">Decoración</h3>
+            <div className="home__products__list__items__box home__products__list__items__box--7">
+              <h3 className="home__products__list__items__box__title">Sale</h3>
             </div>
           </div>
         </Slider>

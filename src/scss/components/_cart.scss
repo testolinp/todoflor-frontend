@@ -1,0 +1,174 @@
+.cart {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  background: var(--light-green);
+  display: none;
+
+  @include breakpoint('large') {
+    background: #0002;
+  }
+
+  &__wrapper {
+    @include breakpoint('large') {
+      position: fixed;
+      width: 400px;
+      height: 100vh;
+      top: 0;
+      right: 0;
+      z-index: 15;
+      background: var(--light-green);
+    }
+  }
+
+  &__content {
+    height: auto;
+    padding: 40px 30px;
+
+    @include breakpoint('large') {
+      padding: 30px;
+    }
+
+    &__top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title {
+      padding: 20px 0 25px;
+      font-family: 'SangBleu';
+      font-size: 20px;
+      color: var(--black);
+      text-transform: uppercase;
+
+      @include breakpoint('large') {
+        font-size: 27px;
+      }
+    }
+
+    &__description {
+      padding: 0 20px 20px;
+      font-family: 'Apercu-light';
+      font-size: 15px;
+      line-height: 19px;
+      color: var(--black);
+      text-align: center;
+    }
+
+    &__boxes {
+      width: 100%;
+      height: 50vh;
+      overflow: hidden;
+      overflow-y: auto;
+
+      @include breakpoint('large') {
+        height: 520px;
+      }
+    }
+
+    &__box {
+      display: grid;
+      grid-template-columns: 40% 60%;
+      grid-column-gap: 15px;
+      border-bottom: 1px solid var(--green);
+      padding: 15px 20px 15px 0;
+  
+      &__image {
+        height: 140px;
+        background: grey;
+      }
+  
+      &__data {
+        display: grid;
+        grid-template-areas: "title prize" "code code" "ft ft";
+        grid-template-columns: 70% 30%;
+        grid-auto-rows: minmax(min-content, max-content);
+
+        &__title {
+          grid-area: title;
+          font-family: 'SangBleu';
+          font-size: 14px;
+          line-height: 19px;
+          color: var(--black);
+          text-transform: uppercase;
+          padding: 0 0 15px;
+        }
+  
+        &__prize {
+          grid-area: prize;
+          font-family: 'SangBleu';
+          font-size: 14px;
+          color: var(--green);
+          text-align: right;
+        }
+  
+        &__code {
+          grid-area: code;
+          font-family: 'Apercu-light';
+          font-size: 11px;
+          color: var(--black);
+        }
+  
+        &__ft {
+          display: flex;
+          grid-area: ft;
+          padding: 50px 0 0;
+
+          @include breakpoint('large') {
+
+          }
+
+          &__delete {
+            margin-left: auto;
+
+            img {
+              width: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    &__bottom {
+      border-top: 1px solid var(--green);
+      padding: 20px 0;
+
+      &__total {
+        display: flex;
+        padding: 0 0 40px;
+
+        &__text {
+          font-family: 'SangBleu';
+          font-size: 14px;
+          color: var(--black);
+          text-transform: uppercase;
+        }
+
+        &__number {
+          display: block;
+          margin-left: auto;
+          font-family: 'SangBleu';
+          font-size: 14px;
+          color: var(--green);
+        }
+      }
+
+      &__btns {
+        text-align: center;
+
+        &__finish {
+          background: var(--white);
+          display: inline-block;
+        }
+
+        &__link {
+          display: inline-block;
+        }
+      }
+    }
+  }
+}

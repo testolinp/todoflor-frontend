@@ -5,7 +5,7 @@ const Hd = () => (
   <header className="hd">
     <div className="hd__list">
       <Link to="/products" className="hd__list__item">Productos</Link>
-      <a href="#" className="hd__list__item">Quienes somos</a>
+      <a href="#" className="hd__list__item">Quiénes somos</a>
       <a href="#" className="hd__list__item">Preguntas frecuentes</a>
     </div>
     <a href="#" className="hd__hamb"><img src="../images/hamb.svg" alt="hamb" /></a>

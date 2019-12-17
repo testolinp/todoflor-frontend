@@ -35,7 +35,8 @@
 
     &__wrapper {
       height: 260px;
-      background: grey;
+      background:url('/images/placeholders/producto01.jpg') center no-repeat;
+      background-size: cover;
 
       @include breakpoint('large') {
         height: 400px;

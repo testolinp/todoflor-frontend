@@ -150,7 +150,7 @@
           padding: 0;
           border: 0 none;
           border-bottom: 1px solid #000;
-          font-family: 'SangBleu';
+          font-family: 'Apercu-light';
           font-size: 14px;
           line-height: 40px;
 
@@ -176,7 +176,7 @@
           height: 40px;
           background: var(--light-green);
           border-radius: 20px;
-          font-family: 'SangBleu';
+          font-family: 'Apercu-light';
           font-size: 12px;
           line-height: 40px;
           text-transform: uppercase;
@@ -199,7 +199,7 @@
         text-align: center;
 
         &__title {
-          font-family: 'SangBleu';
+          font-family: 'Apercu-light';
           font-size: 17px;
           font-weight: 700;
           text-transform: uppercase;
@@ -207,7 +207,8 @@
         }
 
         &__description {
-          font-family: 'SangBleu';
+          padding: 3px 0 0;
+          font-family: 'Apercu-light';
           font-size: 17px;
         }
       }

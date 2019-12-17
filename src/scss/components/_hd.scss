@@ -22,7 +22,7 @@
 
     &__item {
       margin: 0 50px 0 0;
-      font-family: 'SangBleu';
+      font-family: 'Apercu-light';
       font-size: 16px;
 
       &:last-child {
@@ -60,7 +60,7 @@
 
     &__login {
       display: none;
-      font-family: 'SangBleu';
+      font-family: 'Apercu-light';
       font-size: 16px;
 
       @include breakpoint('large') {

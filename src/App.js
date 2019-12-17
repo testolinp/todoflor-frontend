@@ -17,7 +17,7 @@ const App = () => {
       <Route path="/register" component={RegisterView} />
       <Route path="/terms" component={TermsView} />
       <Route path="/products" component={ProductView} />
-      <Route path="/products/category" component={ProductCategoryView} />
+      <Route path="/category" component={ProductCategoryView} />
       <Route path="/product" component={ProductDetailView} />
     </Router>
   );
