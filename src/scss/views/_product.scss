@@ -80,6 +80,19 @@
       font-family: 'Apercu-light';
       font-size: 16px;
       color: var(--black);
+
+      @include breakpoint('large') {
+        transition: color .3s ease-in-out;
+      }
+
+      &--active {
+        color: #1C8D61;
+        font-weight: 600;
+      }
+
+      &:hover {
+        color: #1C8D61;
+      }
     }
   }
 

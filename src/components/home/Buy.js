@@ -2,7 +2,7 @@ import React from 'react'
 
 const Buy = () => {
   return (
-    <section className="home__buy">
+    <section className="home__buy" id="faqs">
       <h2 className="home__buy__title">Cómo comprar</h2>
       <div className="home__buy__list">
         <div className="home__buy__list__item">

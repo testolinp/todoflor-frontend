@@ -1,0 +1,60 @@
+.success {
+  padding: 150px 50px 50px;
+
+  @include breakpoint('large') {
+    padding: 120px 50px 50px;
+  }
+
+  &__content {
+    text-align: center;
+
+    &__img {
+      width: 100px;
+      margin: 0 auto;
+
+      @include breakpoint('large') {
+        width: 145px;
+      }
+    }
+
+    &__title {
+      font-family: 'SangBleu';
+      padding: 45px 0 15px;
+      font-size: 27px;
+      text-transform: uppercase;
+      color: #000;
+    }
+
+    &__description {
+      font-family: 'SangBleu';
+      font-size: 19px;
+      line-height: 26px;
+      text-align: center;
+      color: #000;
+
+      @include breakpoint('large') {
+        max-width: 260px;
+        margin: 0 auto;
+      }
+    }
+
+    &__btn {
+      padding: 50px 0 0;
+
+      &__link {
+        font-family: 'Apercu-light';
+        font-weight: 300;
+        font-size: 16px;
+        text-transform: uppercase;
+        width: 253px;
+        height: 38px;
+        background: #C4F1E0;
+        border-radius: 19px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+      }
+    }
+  }
+}

@@ -22,7 +22,11 @@ const RegisterView = () => {
                 <input type="text" placeholder="CUIT" />
               </div>
               <div className="register__content__form__sep">
-                <input type="text" placeholder="Condición IVA" />
+                <select>
+                  <option disabled selected>Condición IVA</option>
+                  <option>Iva exento</option>
+                  <option>Responsable inscripto</option>
+                </select>
               </div>
             </div>
             <div className="register__content__form__sep">

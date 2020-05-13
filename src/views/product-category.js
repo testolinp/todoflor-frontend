@@ -13,7 +13,7 @@ const ProductCategoryView = () => {
           <section className="product__aside">
             <h2 className="product__aside__title">Flores</h2>
             <a href="#" className="product__aside__group">Ramos</a>
-            <a href="#" className="product__aside__link">Linea económica</a>
+            <a href="#" className="product__aside__link product__aside__link--active">Linea económica</a>
             <a href="#" className="product__aside__link">Linea premium</a>
             <a href="#" className="product__aside__group">Varas</a>
             <a href="#" className="product__aside__link">Linea económica</a>

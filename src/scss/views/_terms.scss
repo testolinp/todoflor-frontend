@@ -7,7 +7,7 @@
     padding: 60px 20px;
 
     @include breakpoint('large') {
-      padding: 60px 100px;
+      padding: 60px 350px 60px 100px;
       max-width: 1440px;
     }
 
@@ -27,6 +27,11 @@
       font-size: 16px;
       line-height: 20px;
       padding: 0 0 20px;
+
+      @include breakpoint('large') {
+        font-size: 15px;
+        line-height: 19px;
+      }
 
       &:last-child {
         padding: 0;

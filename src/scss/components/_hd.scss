@@ -21,12 +21,37 @@
     }
 
     &__item {
+      position: relative;
       margin: 0 50px 0 0;
       font-family: 'Apercu-light';
       font-size: 16px;
+      font-weight: 300;
 
       &:last-child {
         margin: 0;
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 0%;
+        left: 10%;
+        bottom: -5px;
+        height: 1px;
+        background: #1C8D61;
+
+        @include breakpoint('large') {
+          transition: width 0.3s ease-in-out;
+        }
+      }
+
+      &:hover {
+        &:before {
+          @include breakpoint('large') {
+            width: 80%;
+          }
+        }
       }
     }
   }

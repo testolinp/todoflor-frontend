@@ -13,6 +13,18 @@ const ProductDetailView = () => {
           <span className="product-detail__data__code">TF-06234</span>
           <h3 className="product-detail__data__title">RAMO DE GYPSOPHILIA <span>x3</span></h3>
           <p className="product-detail__data__prize">$25</p>
+          <div className="product-detail__data__extra">
+            <div className="product-detail__data__extra__quantity">
+              <input type="text" placeholder="1" />
+              <a href="#">-</a>
+              <a href="#">+</a>
+            </div>
+            <select>
+              <option disabled selected>Color</option>
+              <option>Red</option>
+              <option>Blue</option>
+            </select>
+          </div>
           <div className="product-detail__data__btn">
             <a href="" className="product-detail__data__btn__link">Agregar al carrito</a>
           </div>
