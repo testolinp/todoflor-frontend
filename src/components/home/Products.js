@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+
 import Slider from "react-slick"
 
 const Products = () => {
@@ -38,50 +40,24 @@ const Products = () => {
     ]
   }
 
+  const sliderItems = ['Novedades', 'Flores', 'Follajes','Frutas', 'Navidad', 'Recipientes', 'Sale']
+
   return (
     <section className="home__products">
       <h2 className="home__products__title">Productos</h2>
       <div className="home__products__list">
         <Slider {...settings}>
-          <div className="home__products__list__items">
-            <a href="/category" className="home__products__list__items__box home__products__list__items__box--1">
-              <h3 className="home__products__list__items__box__title">Novedades</h3>
-            </a>
-          </div>
-          <div className="home__products__list__items">
-            <div className="home__products__list__items__box home__products__list__items__box--2">
-              <h3 className="home__products__list__items__box__title">Flores</h3>
+          {sliderItems.map((item, index) => 
+            <div className="home__products__list__items">
+              <Link to="/category" className={`home__products__list__items__box home__products__list__items__box--${index + 1}`}>
+                <h3 className="home__products__list__items__box__title">{item}</h3>
+              </Link>
             </div>
-          </div>
-          <div className="home__products__list__items">
-            <div className="home__products__list__items__box home__products__list__items__box--3">
-              <h3 className="home__products__list__items__box__title">Follajes</h3>
-            </div>
-          </div>
-          <div className="home__products__list__items">
-            <div className="home__products__list__items__box home__products__list__items__box--4">
-              <h3 className="home__products__list__items__box__title">Frutas</h3>
-            </div>
-          </div>
-          <div className="home__products__list__items">
-            <div className="home__products__list__items__box home__products__list__items__box--5">
-              <h3 className="home__products__list__items__box__title">Navidad</h3>
-            </div>
-          </div>
-          <div className="home__products__list__items">
-            <div className="home__products__list__items__box home__products__list__items__box--6">
-              <h3 className="home__products__list__items__box__title">Recipientes</h3>
-            </div>
-          </div>
-          <div className="home__products__list__items">
-            <div className="home__products__list__items__box home__products__list__items__box--7">
-              <h3 className="home__products__list__items__box__title">Sale</h3>
-            </div>
-          </div>
+          )}
         </Slider>
       </div>
       <div className="home__products__btn">
-        <a href="/products" className="home__products__btn__link">Ver todos los productos</a>
+        <Link to="/products" className="home__products__btn__link">Ver todos los productos</Link>
       </div>
     </section>
   )

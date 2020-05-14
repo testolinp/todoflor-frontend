@@ -14,11 +14,11 @@ const Ft = ({ currentYear }) => {
       </section>
       <section className="ft__aside">
         <h2 className="ft__aside__title">TodoFlor SRL</h2>
-        <a className="ft__aside__link">Novedades</a>
+        <Link to="/products" className="ft__aside__link">Novedades</Link>
         <Link to="/products" className="ft__aside__link">Productos</Link>
         <Link to="/#who" className="ft__aside__link">Quiénes somos</Link>
         <Link to="/#faqs" className="ft__aside__link">Preguntas frecuentes</Link>
-        {/* <a className="ft__aside__link">Contacto</a> */}
+        <a href="mailto:todoflor@gmail.com" className="ft__aside__link ft__aside__link--mail">Contacto</a>
         <div className="ft__aside__social">
           <p className="ft__aside__social__text">Seguinos en las redes</p>
           <a href="#" className="ft__aside__social__icon"><img src="/images/inst-icon.svg" /></a>

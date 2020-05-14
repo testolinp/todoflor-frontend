@@ -8,6 +8,8 @@ const ProductView = () => {
     document.title = 'Todoflor SRL | Productos';
   });
 
+  const products = ['Flores', 'Follajes','Frutas', 'Navidad', 'Recipientes', 'Decoración', 'Sale']
+
   return (
     <Layout>
       <section className="products">
@@ -15,30 +17,14 @@ const ProductView = () => {
           <p className="products__herospace__title">Como estamos permanentemente renovando nuestro surtido, contamos con una gran variedad de modelos, tamaños y colores para ofrecerte.</p>
         </section>
         <section className="products__grid">
-          <Link to="/category" className="products__grid__box">
-            <p className="products__grid__box__title">Flores</p>
-          </Link>
-          <Link to="/category" className="products__grid__box">
-            <p className="products__grid__box__title">Follaje</p>
-          </Link>
-          <Link to="/category" className="products__grid__box">
-            <p className="products__grid__box__title">Frutas</p>
-          </Link>
-          <Link to="/category" className="products__grid__box">
-            <p className="products__grid__box__title">Navidad</p>
-          </Link>
-          <Link to="/category" className="products__grid__box">
-            <p className="products__grid__box__title">Recipientes</p>
-          </Link>
-          <Link to="/category" className="products__grid__box">
-            <p className="products__grid__box__title">Decoración</p>
-          </Link>
-          <Link to="/category" className="products__grid__box">
-            <p className="products__grid__box__title">Sale</p>
-          </Link>
+          {products.map((product, index) => 
+            <Link to="/category" className="products__grid__box" key={index}>
+              <p className="products__grid__box__title">{product}</p>
+            </Link>
+          )}
         </section>
         <div className="products__btn">
-          <a href="#" className="products__btn__link">Ver todos los productos</a>
+          <Link to="/category" className="products__btn__link">Ver todos los productos</Link>
         </div>
       </section>
     </Layout>

@@ -118,6 +118,12 @@
       @include breakpoint('large') {
         line-height: 31px;
       }
+
+      &--mail {
+        @include breakpoint('large') {
+          margin-top: 30px;
+        }
+      }
     }
 
     &__social {

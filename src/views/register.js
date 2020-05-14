@@ -27,7 +27,7 @@ const RegisterView = () => {
               </div>
               <div className="register__content__form__sep">
                 <select>
-                  <option disabled selected>Condición IVA</option>
+                  <option disabled selected hidden>Condición IVA</option>
                   <option>Iva exento</option>
                   <option>Responsable inscripto</option>
                 </select>

@@ -27,7 +27,7 @@ const LoginView = () => {
             </div>
           </div>
           <div className="login__content__register">
-            <p className="login__content__register__text">¿Sos nuevo? Registrate <Link to="/register"><a>acá</a></Link></p>
+            <p className="login__content__register__text">¿Sos nuevo? Registrate <Link to="/register">acá</Link></p>
           </div>
         </div>
       </section>
