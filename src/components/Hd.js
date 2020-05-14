@@ -7,10 +7,11 @@ import Menu from './Menu'
 const Hd = () => {
   const [showCart, setShowCart] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const [showSearch, setShowSearch] = useState(false);
 
   return (
     <>
-      <header className="hd">
+      <header className="hd" onMouseLeave={() => setShowSearch(false)}>
         <div className="hd__list">
           <Link to="/products" className="hd__list__item">Productos</Link>
           <a href="/#who" className="hd__list__item">Quiénes somos</a>
@@ -21,7 +22,10 @@ const Hd = () => {
         <div className="hd__checkout">
           <Link to="/login" className="hd__checkout__login">Ingresar</Link>
           <a className="hd__checkout__cart" onClick={() => setShowCart(true)}><img src="../images/cart.svg" alt="cart" /></a>
-          <a href="#" className="hd__checkout__search"><img src="../images/search.svg" alt="search" /></a>
+          <a className="hd__checkout__search" onClick={() => setShowSearch(!showSearch)}><img src="../images/search.svg" alt="search" /></a>
+          <div className={showSearch ? 'hd__checkout__input hd__checkout__input--show' : 'hd__checkout__input'}>
+            <input type="text" placeholder="Buscar ..." />
+          </div>
         </div>
       </header>
 
