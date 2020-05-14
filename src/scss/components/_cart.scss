@@ -9,7 +9,20 @@
   display: none;
 
   @include breakpoint('large') {
+    display: block;
+    opacity: 0;
+    pointer-events: none;
     background: #0002;
+    transition: all .3s ease-in-out;
+  }
+
+  &--show {
+    display: block;
+
+    @include breakpoint('large') {
+      opacity: 1;
+      pointer-events: inherit;
+    }
   }
 
   &__wrapper {
@@ -25,7 +38,8 @@
   }
 
   &__content {
-    height: auto;
+    height: 100vh;
+    overflow-y: auto;
     padding: 40px 30px;
 
     @include breakpoint('large') {
@@ -76,10 +90,11 @@
       grid-column-gap: 15px;
       border-bottom: 1px solid var(--green);
       padding: 15px 20px 15px 0;
-  
+
       &__image {
         height: 140px;
-        background: grey;
+        background: url(/images/placeholders/producto01.jpg) center no-repeat;
+        background-size: cover;
       }
   
       &__data {
@@ -118,8 +133,57 @@
           grid-area: ft;
           padding: 50px 0 0;
 
-          @include breakpoint('large') {
-
+          &__quantity {
+            display: flex;
+    
+            input {
+              width: 30px;
+              border-bottom: 1px solid #000;
+              font-family: 'Apercu-light';
+              font-weight: 300;
+              font-size: 14px;
+              line-height: 18px;
+              color: #000;
+              margin-right: 4px;
+              height: 25px;
+              background: transparent;
+    
+              &:focus {
+                outline: 0 none;
+              }
+    
+              &::placeholder {
+                color: #0005;
+              }
+    
+              &:-ms-input-placeholder {
+                color: #0005;
+              }
+    
+              &::-ms-input-placeholder {
+                color: #0005;
+              }
+            }
+    
+            a {
+              position: relative;
+              top: 4px;
+              display: flex;
+              width: 20px;
+              height: 20px;
+              border-radius: 100%;
+              border: 1px solid #000;
+              justify-content: center;
+              align-items: center;
+              font-weight: 300;
+              font-size: 14px;
+              color: #000;
+              font-family: 'Apercu-light';
+    
+              &:nth-child(2) {
+                margin-right: 4px;
+              }
+            }
           }
 
           &__delete {
@@ -159,14 +223,30 @@
 
       &__btns {
         text-align: center;
+        padding: 0 40px;
 
         &__finish {
           background: var(--white);
-          display: inline-block;
+          width: 253px;
+          height: 38px; 
+          border-radius: 19px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-transform: uppercase;
+          font-family: 'Apercu-light';
+          font-weight: 300;
+          font-size: 16px;
         }
 
         &__link {
+          margin: 20px 0 0;
           display: inline-block;
+          color: #1C8D61;
+          text-decoration: underline;
+          font-family: 'Apercu-light';
+          font-weight: 300;
+          font-size: 17px;
         }
       }
     }

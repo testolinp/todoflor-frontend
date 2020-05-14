@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Layout from '../components/Layout'
 
 const RegisterView = () => {
+  useEffect(() => {
+    document.title = 'Todoflor SRL | Registrate';
+  });
+
   return (
     <Layout hideFt="true">
       <section className="register">

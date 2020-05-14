@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import { Link } from 'react-router-dom'
+
 import Layout from '../components/Layout'
 
 const ProductDetailView = () => {
+  useEffect(() => {
+    document.title = 'Todoflor SRL | Ramo de Gypsophilia';
+  });
+
   return (
     <Layout>
       <section className="product-detail">
@@ -26,7 +32,7 @@ const ProductDetailView = () => {
             </select>
           </div>
           <div className="product-detail__data__btn">
-            <a href="" className="product-detail__data__btn__link">Agregar al carrito</a>
+            <Link to="/resume" className="product-detail__data__btn__link">Agregar al carrito</Link>
           </div>
         </div>
         <div className="product-detail__extra">

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Layout from '../components/Layout'
 import Herospace from '../components/home/Herospace'
 import Products from '../components/home/Products'
@@ -7,6 +7,10 @@ import Buy from '../components/home/Buy'
 import Newsletter from '../components/home/Newsletter'
 
 const HomeView = () => {
+  useEffect(() => {
+    document.title = 'Todoflor SRL';
+  });
+
   return (
     <Layout>
       <section className="home">

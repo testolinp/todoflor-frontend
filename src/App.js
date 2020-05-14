@@ -10,6 +10,7 @@ import ProductCategoryView from './views/product-category'
 import ProductDetailView from './views/product-detail'
 import SuccessView from './views/success'
 import Error404View from './views/404'
+import ResumeView from './views/resume'
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
       <Route path="/products" component={ProductView} />
       <Route path="/category" component={ProductCategoryView} />
       <Route path="/product" component={ProductDetailView} />
+      <Route path="/resume" component={ResumeView} />
       <Route path="/success" component={SuccessView} />
       <Route path="/404" component={Error404View} />
     </Router>

@@ -3,7 +3,6 @@ import { useLocation } from "react-router-dom";
 
 import Hd from './Hd'
 import Ft from './Ft'
-import Cart from './Cart'
 
 import '../App.scss'
 
@@ -24,7 +23,6 @@ const Layout = ({ children, hideFt, }) => {
       { !hideFt && 
         <Ft currentYear={ currentYear } />
       }
-      <Cart />
     </>
   )
 }

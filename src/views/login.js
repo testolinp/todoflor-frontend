@@ -1,8 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Layout from '../components/Layout'
 
 const LoginView = () => {
+  useEffect(() => {
+    document.title = 'Todoflor SRL | Ingresar';
+  });
+
   return (
     <Layout hideFt="true">
       <section className="login">
