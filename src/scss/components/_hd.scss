@@ -119,51 +119,5 @@
         margin-left: 20px;
       }
     }
-
-    &__search {
-      display: none;
-      width: 25px;
-      height: 25px;
-      cursor: pointer;
-
-      @include breakpoint('large') {
-        display: block;
-        margin-left: 20px;
-      }
-    }
-
-    &__input {
-      position: absolute;
-      top: -8px;
-      right: 40px;
-      display: none;
-      opacity: 0;
-      pointer-events: none;
-
-      @include breakpoint('large') {
-        display: block;
-      }
-
-      &--show {
-        opacity: 1;
-        pointer-events: inherit;
-      }
-
-      input {
-        width: 240px;
-        height: 40px;
-        background: #fff;
-        border-radius: 22px;
-        border: 1px solid #1C8D61;
-        font-family: 'Apercu-light';
-        font-weight: 300;
-        font-size: 14px;
-        padding: 0 15px;
-
-        &:focus {
-          outline: 0 none;
-        }
-      }
-    }
   }
 }

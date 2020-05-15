@@ -12,6 +12,15 @@ const ProductCategoryView = () => {
         </section>
         <div className="product__content">
           <section className="product__aside">
+            <div className="product__aside__search">
+              <h3 className="product__aside__search__title">Busqueda por articulo/producto</h3>
+              <div className="product__aside__search__content">
+                <div className="product__aside__search__content__input">
+                  <input type="text" placeholder="Buscar ..." />
+                </div>
+                <a className="product__aside__search__content__btn"><img src="../images/search.svg" alt="search" /></a>
+              </div>
+            </div>
             <h2 className="product__aside__title">Flores</h2>
             <a href="#" className="product__aside__group">Ramos</a>
             <a href="#" className="product__aside__link product__aside__link--active">Linea económica</a>

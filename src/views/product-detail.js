@@ -39,6 +39,7 @@ const ProductDetailView = () => {
           <p className="product-detail__extra__description">Packaging: <span>30x25</span></p>
           <p className="product-detail__extra__description">Medidas: <span>30cm x 25cm</span></p>
           <p className="product-detail__extra__description">Cantidad minima: <span>3 unidades</span></p>
+          <p className="product-detail__extra__description">Stock disponible: <span>3 unidades</span></p>
         </div>
       </section>
     </Layout>
