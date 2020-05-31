@@ -23,6 +23,12 @@
       opacity: 1;
       pointer-events: inherit;
     }
+
+    .cart__wrapper {
+      @include breakpoint('large') {
+        right: 0;
+      }
+    }
   }
 
   &__wrapper {
@@ -31,9 +37,10 @@
       width: 400px;
       height: 100vh;
       top: 0;
-      right: 0;
+      right: -400px;
       z-index: 15;
       background: var(--light-green);
+      transition: all .3s ease-in-out .2s;
     }
   }
 

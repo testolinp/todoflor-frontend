@@ -102,13 +102,23 @@
         }
       }
     }
+
     &__title {
       display: inline-block;
       padding: 30px 0 5px;
       font-family: 'SangBleu';
       font-size: 14px;
+      font-weight: 600;
       color: var(--black);
       text-transform: uppercase;
+
+      @include breakpoint('large') {
+        transition: color .3s ease-in-out;
+      }
+
+      &:hover {
+        color: #1C8D61;
+      }
     }
 
     &__group {
@@ -117,6 +127,14 @@
       font-family: 'Apercu-light';
       font-size: 16px;
       color: var(--black);
+
+      @include breakpoint('large') {
+        transition: color .3s ease-in-out;
+      }
+
+      &:hover {
+        color: #1C8D61;
+      }
     }
 
     &__link {
@@ -232,10 +250,41 @@
     }
 
     &__number {
+      position: relative;
       margin: 0 5px;
       font-family: 'Apercu-light';
       font-size: 16px;
       color: var(--black);
+      
+      &:before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 1px;
+        background: var(--green);
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        transform: translateX(-50%);
+
+        @include breakpoint('large') {
+          transition: width .3s ease-in-out;
+        }
+      }
+
+      &--active {
+        &:before {
+          width: 10px;
+        }
+      }
+
+      &:hover {
+        @include breakpoint('large') {
+          &:before {
+            width: 10px;
+          }
+        }
+      }
     }
   }
 }

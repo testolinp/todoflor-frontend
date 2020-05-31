@@ -11,7 +11,7 @@ const ProductDetailView = () => {
   return (
     <Layout>
       <section className="product-detail">
-        <div className="product-detail__path">productos > flores > varas > <span>linea premium</span></div>
+        <div className="product-detail__path"><Link to="/products">productos</Link> > <Link to="/category">flores</Link> > <Link to="/category">varas</Link> > <span>linea premium</span></div>
         <div className="product-detail__image">
           <div className="product-detail__image__wrapper"></div>
         </div>
